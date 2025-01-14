@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pause NYC</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div id="loading-text">Loading...</div>
+  </div>
+  
+  <!-- Three.js Canvas -->
+  <canvas id="bg"></canvas>   
+
+  <!-- Main Content -->
+  <main>
+    <header>
+      <h1>Pause NYC</h1>
+      <p>Join us on a visual journey through the heart of New York City, where every street and skyline tells a story.</p>
+    </header>
+
+    <blockquote>
+      <p>"New York is not a city, it's a world. It's a place that has always reinvented itself, from the streets to the skyscrapers, where history is written in every brick." – David Byrn</p>
+    </blockquote>
+
+    <section class="scroll-animate">
+      <h2> Rockefeller Center</h2>
+      <p>
+        The Ice Rink’s Humble Beginnings: The famous ice rink at Rockefeller Center wasn’t always a permanent fixture. It was first installed as part of a 1936 holiday celebration. The rink was so popular that it became a yearly tradition, eventually becoming the icon it is today. What many don’t know is that it originally featured an outdoor café, and in the 1930s, skaters could even rent small wooden boards to skate on the ice.
+      </p>
+
+      <p>
+        The first Rockefeller Center Christmas tree was erected in 1931, during the depths of the Great Depression. The tree, a 20-foot tall fir, was decorated by workers and their families. The tradition grew, and by 1933, children from local schools had made 1,000 ornaments for the tree, giving rise to the annual decorating event that is now world-famous.
+      </p>
+
+      <p>
+        Radio City Music Hall, located within Rockefeller Center, was the birthplace of the famous Rockettes. The Rockettes first performed in 1932, and their precision dance routines have since become synonymous with the holidays. The Rockettes’ history includes groundbreaking performances, with their high-kicks and synchronized movements making them a beloved American icon.
+
+      </p>
+    </section>
+
+    <section class="scroll-animate light">
+      <h2>The Museum of Modern Art (MoMA)</h2>
+
+      <p>
+        MoMA was founded in 1929 to introduce modern art to America, a concept that was initially met with skepticism. One of its first acquisitions was a Bauhaus chair by Marcel Breuer, which revolutionized furniture design. MoMA was also pivotal in propelling New York to the forefront of the art world by showcasing American abstract expressionists in the 1940s and 50s.
+
+      </p>
+
+      <h2>Solomon R. Guggenheim Museum</h2>
+
+      <p>
+        Designed by Frank Lloyd Wright, the Guggenheim's spiral architecture was initially controversial. Wright believed art should be experienced continuously, leading to the unique design. When it opened in 1959, it housed a groundbreaking abstract art exhibit that challenged traditional views and helped establish New York as the center of modern art.
+
+
+      </p>
+
+    </section>
+
+    <blockquote>
+      <p> "Architecture is the learned game, correct and magnificent, of forms assembled in the light." <br> – Le Corbusier</p>
+    </blockquote>
+
+
+    <section class="scroll-animate left">
+      <h2>Broadway</h2>
+
+      <h3>The Birth of Broadway Musicals</h3>
+      <p>
+        Broadway’s transformation into the theater capital of the world can be traced back to the early 1900s. One of the key moments in Broadway's history came with the production of Show Boat in 1927. This was the first musical to combine a dramatic plot with music, launching the modern Broadway musical format that would shape the future of theater.
+      </p>
+      <h3>The 1910 Broadway Theater Fire</h3>
+      <p>
+        In 1910, a deadly fire broke out at the original Broadway Theater, killing over 200 people. The tragedy prompted sweeping changes to theater safety regulations, including the installation of fireproofing, exit routes, and sprinkler systems. These changes set a new standard for theater safety, influencing Broadway theaters around the world.
+      </p>
+      <h3>The Rise of the 'Golden Age' Musicals</h3>
+      <p>
+        During the 1920s and 1930s, Broadway’s “Golden Age” produced some of the most beloved and influential musicals of all time, like Oklahoma! and Porgy and Bess. These musicals brought together extraordinary composers and lyricists, like Rodgers and Hammerstein, and revolutionized theater by integrating songs into the plot, something that had never been done before. Today, Broadway continues to carry on the legacy of these groundbreaking productions.
+      </p>
+    </section>
+
+    <blockquote>
+      <p>Thanks for watching!</p>
+    </blockquote>
+
+  </main>
+
+
+  <script
+    async
+    src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+  ></script>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <script type="module" src="index.js"></script>
+  <script src="animations.js"></script> <!-- 添加动画逻辑的 JS 文件 -->
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* 背景颜色 */
+    color: #fff; /* 文字颜色 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* 确保在最前 */
+  }
+  
+  #loading-text {
+    color: rgb(111, 216, 239);
+    font-size: 24px;
+    text-align: center;
+  }
+  
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  /* --dark-bg: rgba(15, 15, 15, 0.95); */
+  --spacing: 350px;
+
+  font-family:'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+
+  display: block; /* 移除默认的 inline 样式 */
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: rgb(111, 216, 239);
+    /* background-color: white; */
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
