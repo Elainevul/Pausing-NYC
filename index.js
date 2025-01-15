@@ -26,7 +26,7 @@ function loadBox() {
 
 function loadModel(loadingManager) {
   let loader = new GLTFLoader(loadingManager);
-  loader.load("./model-0-0.glb", function (gltf) {
+  loader.load("https://storage.googleapis.com/my-model-storage/model-0-0.glb", function (gltf) {
     scene.add(gltf.scene);
     gltf.scene.position.set(0, 0, 0);
     gltf.scene.rotateY(-Math.PI / 2);
